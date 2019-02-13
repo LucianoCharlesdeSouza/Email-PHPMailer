@@ -1,14 +1,16 @@
 <?php
 
-require './Library/Mailer/PHPMailerException.php';
-require './Library/Mailer/SMTP.php';
-require './Library/Mailer/PHPMailer.php';
+require("vendor/autoload.php");
+
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\PHPMailer;
 
 $dados_form = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
 if (isset($dados_form['nome'])) :
 
-    $mail = new App\Library\Mailer\PHPMailer();
+    $mail = new PHPMailer();
 
 try {
 
