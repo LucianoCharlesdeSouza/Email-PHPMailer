@@ -1,9 +1,9 @@
 {
-    "name": "phpmailer/phpmailer",
+    "name": "phpmailer/example",
     "description": "projeto de exemplo de uso da classe PHPMailer",
     "type": "project",
     "license": "MIT",
     "require": {
-        "phpmailer/phpmailer": "^6.0"
+        "phpmailer/phpmailer": "~6.0"
     }
 }
